@@ -1397,7 +1397,7 @@ body{
 @media (max-width: 1050px){
     .wrapper {
         max-width: 1105px;
-        padding: 0px 40px 0 40px;
+        padding: 0px 40px 0 22px;
     }
     .header__nav{
         display: none;
@@ -1425,6 +1425,9 @@ body{
     }
     .skills__title {
         font-size: 49px;
+    }
+    .swiper-container {
+        width: 984px;
     }
     .slider__title{
         font-size: 49px;
