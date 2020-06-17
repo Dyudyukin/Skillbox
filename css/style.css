@@ -1376,7 +1376,7 @@ body{
         max-width: 710px;
     }    
     .swiper-container {
-        width: 880px;
+        width: 944px;
     }
     .slider__item img {
         display: block;
@@ -1510,8 +1510,10 @@ body{
         padding-top: 25px;
     }
     .swiper-container {
-        width: 665px;
+        width: 688px;
+        padding: 20px 20px;
     }
+    
     .slider__item img {
         display: block;
         width: 100%;
