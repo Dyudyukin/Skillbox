@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/style.css">
     </head>
-    <body>
+    <body class="body-main">
         <div class="popup-fade">
             <div class="popup-welldone">
                 <div class="welldone"><p class="welldone-ok">Данные успешно отправлены</p></div>
@@ -25,19 +25,19 @@
                                     <p class="popup-error-email">*Укажите корректный адрес электронной почты в формате: "login@sitename.domen"</p>
                                 </div>
                                 <p class="popup__main-field">
-                                    <label for="popup-name">Ваше имя:</label><br>
+                                    <label class="popup-label" for="popup-name">Ваше имя:</label><br>
                                     <input class="popup__main-item popup-name" id="popup-name" 
                                     type="text" size="40" name="name" placeholder="Введите ваше имя">
                                 </p>
                                 <p class="popup__main-field">
-                                    <label for="popup-tel">Ваш телефон:</label><br>
+                                    <label class="popup-label" for="popup-tel">Ваш телефон:</label><br>
                                     <input class="popup__main-item popup-tel" id="popup-tel" 
-                                    type="text" size="40" name="tel" placeholder="+7-xxx-xxx-xx-xx">
+                                    type="tel" size="16" name="tel" placeholder="+7-xxx-xxx-xx-xx">
                                 </p>
                                 <p class="popup__main-field">
-                                    <label for="popup-email">Ваш e-mail:</label><br>
+                                    <label class="popup-label" for="popup-email">Ваш e-mail:</label><br>
                                     <input class="popup__main-item popup-email" id="popup-email" 
-                                    type="text" size="40" name="email" placeholder="login@sitename.domen">
+                                    type="email" size="40" name="email" placeholder="login@sitename.domen">
                                 </p>
                                 <button class="popup-btn" aria-label="Заказать звонок" type="submit">
                                     Заказать звонок
@@ -75,7 +75,7 @@
                         </ul>
                     </nav>
                     <div class="header__callback">
-                        <a href="tel:+74999955577">+7 (499) 995-55-77</a>
+                        <a class="header__number" href="tel:+74999955577">+7 (499) 995-55-77</a>
                         <button class="header__button" aria-label="Заказать звонок" type="button">
                             Заказать звонок
                         </button>
@@ -235,11 +235,11 @@
                         <address class="information__address">
                             <span class="information__contact-item">
                                 <i class="fas fa-phone-alt"></i>
-                                <a href="tel:+74999957755">+7 (499) 995-77-55</a>
+                                <a class="information__contact-link" href="tel:+74999957755">+7 (499) 995-77-55</a>
                             </span>
                             <span class="information__contact-item">
                                 <i class="fas fa-envelope"></i>
-                                <a href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
+                                <a class="information__contact-link" href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
                             </span>
                         </address>
                     </div>
@@ -249,17 +249,17 @@
                         </button>
                         <address>
                             <ul class="information__social-item">
-                                <li class="information__social-link">
-                                    <a href="https://vk.com/"><i class="fab fa-vk fa-2x"></i></a>
+                                <li class="information__social-link vk-link">
+                                    <a class="soc-link" href="https://vk.com/"></a>
                                 </li>
-                                <li class="information__social-link">
-                                    <a href="https://facebook.com/"><i class="fab fa-facebook-f fa-2x"></i></a>
+                                <li class="information__social-link fb-link">
+                                    <a class="soc-link" href="https://facebook.com/"></a>
                                 </li>
-                                <li class="information__social-link">
-                                    <a href="https://twitter.com/"><i class="fab fa-twitter fa-2x"></i></a>
+                                <li class="information__social-link tweet-link">
+                                    <a class="soc-link" href="https://twitter.com/"></a>
                                 </li>
-                                <li class="information__social-link">
-                                    <a href="https://instagram.com/"><i class="fab fa-instagram fa-2x"></i></a>
+                                <li class="information__social-link insta-link">
+                                    <a class="soc-link" href="https://instagram.com/"></a>
                                 </li>
                             </ul>
                         </address>
@@ -269,7 +269,7 @@
         </main>
         <footer class="footer">
             <div class="footer__copyright">
-                <small>&copy; Дмитрий Алексеев, 2016 – 2018</small>
+                <small class="footer__desc">&copy; Дмитрий Алексеев, 2016 – 2018</small>
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>

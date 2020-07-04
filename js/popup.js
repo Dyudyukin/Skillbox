@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $('.popup-name').blur(validateNameField);
+    $('.popup-tel').blur(validateTelField);
+    $('.popup-email').blur(validateEmailField);
      
     function validateNameField() {
         const name = $('.popup-name').val();
@@ -6,6 +9,7 @@ $(document).ready(function(){
         if (validateName(name)) {
             $('.popup-error').hide();
             $('.popup-name').removeClass('error');
+            
             return true;
         } else {
             $('.popup-error').show();
