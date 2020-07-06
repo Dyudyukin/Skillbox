@@ -14,6 +14,13 @@ $(document).ready(function($) {
 		return false;
 	});
 
+	$('.intro__button').click(function() {
+		$('body').addClass('overflow__hidden');	
+		$('.popup-fade').fadeIn(0);
+		$('.popup').fadeIn(1000);
+		return false;
+	});
+
 	$('.menu__btn').click(function() {
 		$('body').toggleClass('overflow__hidden');
 	});
